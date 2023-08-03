@@ -3,12 +3,13 @@
 }*/
 body {
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+   flex-direction: column;
 
+  align-items: center;
+  */
+  text-align: center;
 }
 
 img {
@@ -25,22 +26,24 @@ img {
 .items {
   gap: 52px;
   display: flex;
+  justify-content: center;
+
   }
 
 .media{
-  column-gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 200px;
+  /* column-gap: 10px;
+ flex-wrap: wrap;
+  justify-content: center;*/
+  max-width: 200px;
+  /*shouldve used max-width so why did it work*/
 }
 .media p{
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  /*flex-wrap: wrap; unnecessary for some reason*/
 }
 
 div {
-    display: flex;
+    display: block;
 }
 
 /* do not edit this footer */
